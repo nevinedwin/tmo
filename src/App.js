@@ -1,18 +1,23 @@
 
+import { ThemeProvider } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Sample from './components/sample';
-import { SignUp } from './Modules';
+import { customeTheme } from './components';
+import { DashBoard, SignUp } from './Modules';
 
 
 
 function App() {
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/signup' element={<SignUp />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={customeTheme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/dashboard' element={<DashBoard />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
 
 
   );
