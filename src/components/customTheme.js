@@ -7,13 +7,13 @@ export const customeTheme = createTheme({
     },
     palette: {
         primary: {
-            main: '#EEEEEE',
+            main: '#ffffff',
         },
         secondary: {
             main: '#2A2550',
         },
         info: {
-            main: '#525E75'
+            main: '#EEEEEE'
         },
 
     },

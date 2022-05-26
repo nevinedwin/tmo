@@ -19,6 +19,7 @@ export default {
     avatarList: [
       { text: 'Profile', logo: <Person /> },
       { text: 'Score Board', logo: <Scoreboard /> },
-      { text: 'Logout', logo: <Logout /> }]
+      { text: 'Logout', logo: <Logout /> }],
+    greetings: 'Welcome'
   }
 }
