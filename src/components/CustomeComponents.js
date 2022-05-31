@@ -1,4 +1,4 @@
-import { alpha, Button, InputBase, styled } from "@mui/material";
+import { alpha, Button, InputBase, styled, TextField } from "@mui/material";
 
 export const NavButton = styled(Button)(({ theme }) => ({
     color: 'black',
@@ -55,3 +55,27 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
         },
     },
 }));
+
+export const LoginTextField = styled(TextField)(({ }) => ({
+    color: 'white',
+    input: {
+        color: 'white'
+    },
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: 'white',
+            color: 'white'
+        },
+        '&:hover fieldset': {
+            borderColor: 'white',
+            color: 'white'
+        },
+        '&.Mui-focused fieldset': {
+            borderColor: 'white',
+            color: 'white'
+        },
+        'input': {
+            color: 'white'
+        }
+    },
+}))

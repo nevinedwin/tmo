@@ -1,16 +1,19 @@
 import { Logout, Person, Scoreboard } from "@mui/icons-material";
 
 export default {
-  signUp: {
+  Login: {
     mainHeading: 'TMO',
     submit: 'Submit',
     emailLabel: 'Email',
     emailPlaceholder: 'xyz.inapp.com',
-    otpLabel: 'OTP',
+    password: 'password',
     description: 'site by TMO',
     getOtpButtonLabel: 'Get OTP',
     submitButtonLabel: 'Submit',
-    loginHeading: 'Sign into your Account'
+    loginHeading: 'Login  into your Account',
+    forgetPassword: 'Forgot Password',
+    confirmpassword: 'Confirm Password',
+    sigupheading: 'Sign Up',
   },
   dashboard: {
     navItem: ['Profile', 'Logout'],

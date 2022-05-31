@@ -3,7 +3,7 @@ import { ThemeProvider } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { customeTheme } from './components';
-import { DashBoard, SignUp } from './Modules';
+import { DashBoard, Login, Signup } from './Modules';
 
 
 
@@ -13,7 +13,8 @@ function App() {
     <ThemeProvider theme={customeTheme}>
       <BrowserRouter>
         <Routes>
-          <Route path='/signup' element={<SignUp />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/dashboard' element={<DashBoard />} />
         </Routes>
       </BrowserRouter>
