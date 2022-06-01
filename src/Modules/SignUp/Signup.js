@@ -45,7 +45,7 @@ const Signup = ({ setNewUser }) => {
                 justifyContent: 'center',
                 transition: 'ease-in-out 1s'
             }}>
-                <Typography fontSize={30} sx={{ marginBottom: '20px', color: 'white' }} variant='h4' gutterBottom>{Constants.Login.sigupheading}</Typography>
+                <Typography fontSize={30} sx={{ marginBottom: '20px', color: 'primary.main', textTransform: 'uppercase', fontWeight: 800 }} variant='h4' gutterBottom>{Constants.Login.sigupheading}</Typography>
                 {/* <Typography variant='body1'>{Constants.Login.description}</Typography> */}
                 <Box sx={{
                     marginBottom: '20px',

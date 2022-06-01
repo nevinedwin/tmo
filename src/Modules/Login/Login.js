@@ -52,7 +52,7 @@ const Login = ({ setNewUser }) => {
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-                <Typography fontSize={30} sx={{ marginBottom: '20px', color: 'white' }} variant='h4' gutterBottom>{Constants.Login.loginHeading}</Typography>
+                <Typography fontSize={30} sx={{ marginBottom: '20px', color: 'primary.main', fontWeight: 800, textTransform: 'uppercase', animation: '3s linear 1s infinite alternate slidein' }} variant='h4' gutterBottom>{Constants.Login.loginHeading}</Typography>
                 {/* <Typography variant='body1'>{Constants.Login.description}</Typography> */}
                 <Box sx={{
                     marginBottom: '20px',
