@@ -117,11 +117,6 @@ const Signup = ({ setNewUser }) => {
                 }}>
                     <Button size='small' sx={{ width: '180px' }} variant='contained' onClick={handleSubmit}>{Constants.Login.submitButtonLabel}</Button>
                 </Box>
-                <Box sx={{
-                    marginTop: '5px'
-                }}>
-                    <Button size='small' sx={{ width: '180px', textTransform: 'none' }} variant='text' onClick={handleSubmit}>{Constants.Login.forgetPassword}</Button>
-                </Box>
             </Box>
         </form>
         // </Grid>
