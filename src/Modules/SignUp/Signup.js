@@ -7,7 +7,7 @@ import { Constants } from '../../utilities'
 
 
 
-const Signup = ({ setNewUser }) => {
+const Signup = ({ setNewUser, className }) => {
     const initialValue = {
         email: '',
         password: '',
@@ -35,7 +35,7 @@ const Signup = ({ setNewUser }) => {
     return (
         // <Grid container direction='row' sx={{ height: '100%', width: '100%', overflow: 'hidden', justifyContent: 'center', alignItems: 'center' }}>
         //     <Grid item component={Paper} elevation={6} square sx={{ width: '500px', height: '400px' }}>
-        <form autoComplete='off' onSubmit={handleSubmit}>
+        <form autoComplete='off' onSubmit={handleSubmit} >
             <Box sx={{
                 width: '100%',
                 height: '400px',
