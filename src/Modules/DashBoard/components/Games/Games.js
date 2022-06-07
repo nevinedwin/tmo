@@ -43,72 +43,80 @@ const Games = ({ even }) => {
          .fromTo(mainHeading.current, {
             // scale: 0,
             opacity: 0,
+            yPercent: 50,
          }, {
             scrollTrigger: {
                trigger: mainHeading.current,
                toggleActions: 'play pause reverse pause',
-               start: '100px center',
-               end: '120px bottom',
-               scrub: 4,
+               start: 'bottom 70%',
+               end: 'bottom bottom',
+               scrub: 1,
                // markers: true
             },
             ease: 'easeIn',
-            duration: 3,
+            duration: 1,
             opacity: 1,
-            scale: 1
+            scale: 1,
+            yPercent: 0
          })
          .fromTo(subHeading.current, {
             // scale: 0,
-            opacity: 0
+            opacity: 0,
+            yPercent: 50,
          }, {
             scrollTrigger: {
                trigger: subHeading.current,
                toggleActions: 'play pause reverse pause',
-               start: '180px 400px',
+               start: 'bottom 70%',
                end: '200px bottom',
-               scrub: 4,
+               scrub: 1,
                // markers: true
             },
             ease: 'easeIn',
-            duration: 3,
+            duration: 1,
             opacity: 1,
-            scale: 1
+            scale: 1,
+            yPercent: 0,
 
          })
          .fromTo(content.current, {
             // scale: 0,
-            opacity: 0
+            opacity: 0,
+            yPercent: 20,
          }, {
             scrollTrigger: {
                trigger: content.current,
                toggleActions: 'play pause reverse pause',
-               start: '180px 450px',
+               start: 'bottom 80%',
                end: '200px bottom',
-               scrub: 5,
+               scrub: 1,
                // markers: true
             },
             ease: 'easeIn',
-            duration: 3,
+            duration: 1,
             opacity: 1,
-            scale: 1
+            scale: 1,
+            yPercent: 0,
 
          })
          .fromTo(gameButton.current, {
             scale: 0,
-            opacity: 0
+            opacity: 0,
+            yPercent: 50,
          }, {
             scrollTrigger: {
                trigger: gameButton.current,
                toggleActions: 'play pause reverse pause',
-               start: 'top 650px',
+               start: 'top 95%',
                end: 'bottom bottom',
-               scrub: 3,
+               scrub: 1,
                // markers: true
             },
             ease: 'back',
-            duration: 2,
+            duration: 1,
             opacity: 1,
-            scale: 1
+            scale: 1,
+            yPercent: 0,
 
          })
    }, [])
