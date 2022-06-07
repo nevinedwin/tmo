@@ -54,7 +54,7 @@ const Games = ({ even }) => {
                // markers: true
             },
             ease: 'easeIn',
-            duration: 1,
+            duration: 3,
             opacity: 1,
             scale: 1,
             yPercent: 0
@@ -130,7 +130,7 @@ const Games = ({ even }) => {
             sx={{
                height: '100vh',
                flexDirection: { xs: 'column', md: 'row' },
-               backgroundColor: 'black'
+               backgroundColor: 'black',
             }}>
             <Grid
                order={even ? 1 : 2}
@@ -198,8 +198,8 @@ const Games = ({ even }) => {
                   className='slide'
                   elevation={0}
                   sx={{
-                     width: '500px',
-                     height: '550px',
+                     width: '600px',
+                     height: '650px',
                      borderRadius: 0,
                   }}>
                   <CardMedia

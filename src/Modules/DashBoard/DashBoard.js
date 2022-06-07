@@ -19,25 +19,34 @@ const DashBoard = () => {
   console.log({ newUser })
 
   return (
-    <Grid container id='content' sx={{ backgroundColor: 'black', width: '100%', height: '100%', }} >
-      <Grid item sx={{
-        width: { xs: '0%', md: '50%', lg: '60%' },
-        height: '100vh',
-        // backgroundColor: 'black'
-      }}>
-      </Grid>
+    <Grid container id='content' sx={{
+      backgroundColor: 'black', width: '100%', height: '100vh',
+    }} >
       <Grid
-        item
         container
         sx={{
-          width: { xs: '100%', md: '50%', lg: '40%' },
           height: '100vh',
-          alignItems: 'center',
-          justifyContent: 'center'
+          width: '100%',
         }}>
-        {newUser ?
-          <Signup setNewUser={setNewUser} /> :
-          <Login setNewUser={setNewUser} />}
+        <Grid item sx={{
+          width: { xs: '0%', md: '50%', lg: '60%' },
+          height: '100vh',
+          // backgroundColor: 'black'
+        }}>
+        </Grid>
+        <Grid
+          item
+          container
+          sx={{
+            width: { xs: '100%', md: '50%', lg: '40%' },
+            height: '100vh',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+          {newUser ?
+            <Signup setNewUser={setNewUser} /> :
+            <Login setNewUser={setNewUser} />}
+        </Grid>
       </Grid>
       {
         [1, 2, 3, 4].map((item, index) => (
